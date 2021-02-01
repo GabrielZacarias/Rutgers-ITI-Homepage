@@ -1,0 +1,863 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.promo_top {
+  background: #5f6a72;
+  color: white;
+  height: 35px;
+}
+
+.promo_top ul li,
+.promo_left,
+.promo_right {
+  display: inline-block;
+}
+
+.promo_top li {
+  padding: 10px;
+}
+
+.promo_top a:hover {
+  color: #c03;
+}
+
+.promo_top a {
+  color: white;
+}
+
+.promo_left {
+  position: absolute;
+  left: 15%;
+}
+
+.promo_right {
+  position: absolute;
+  right: 15%;
+}
+
+/* Rutgers navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  height: 120px;
+  /* position: sticky; */
+  top: 0;
+  background: white;
+  color: white;
+  list-style-type: none;
+  z-index: 10000000;
+  border-bottom: 1px solid lightgrey;
+}
+
+.navigation .log {
+  width: 250px;
+  padding-right: 20px;
+  margin-left: 15%;
+}
+
+.mainColor {
+  color: black;
+}
+
+.navigation ul li:hover > .mainColor {
+  color: white;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation .padHeight li {
+  padding: 32px 15px;
+  position: relative;
+}
+
+.navigation ul li:hover > ul.drop {
+  display: block;
+}
+.navigation ul li:hover {
+  background: #c03;
+}
+
+.navigation ul.drop {
+  flex-direction: column;
+  display: none;
+  position: absolute;
+  z-index: 100;
+  background: rgba(204, 0, 51, 0.95);
+  left: 0;
+  top: 119px;
+  width: calc(100% + 100px);
+}
+
+.navigation ul.last {
+  right: -3px;
+}
+
+.navigation ul.drop li {
+  border-top: 1px solid white;
+  padding: 15px 10px;
+}
+
+.navigation ul.drop li:hover {
+  background: #ae0531;
+}
+
+.navigation ul {
+  margin-right: 14%;
+  margin-left: auto;
+} /*
+
+/* Main section image and text block */
+.main img {
+  width: 100%;
+}
+
+.main {
+  position: relative;
+}
+
+.main .main_container {
+  display: inline-block;
+  background: rgba(204, 0, 51, 0.85);
+  padding: 10px;
+  width: 500px;
+  color: white;
+  position: absolute;
+  left: 60px;
+  top: 24%;
+  z-index: 0;
+}
+
+.main .main_container h1 {
+  padding: 10px 0 0 30px;
+  font-size: 50px;
+}
+.main .main_container p {
+  padding: 10px 30px;
+  line-height: 25px;
+}
+
+.main .main_container button {
+  background: white;
+  border: 0;
+  font-size: 22px;
+  padding: 10px;
+  margin: 0 0 30px 30px;
+}
+
+.main .main_container button a {
+  text-decoration: none;
+  color: #007fac;
+}
+
+/* certificate section */
+
+.certificate {
+  display: inline-block;
+  padding-left: 15%;
+  width: 100%;
+}
+
+.certificate h3 {
+  text-transform: uppercase;
+  padding-top: 10px;
+  width: 100%;
+  font-weight: 300;
+  padding-top: 30px;
+  font-size: 18px;
+  display: block;
+}
+
+.certificate h2 {
+  font-size: 40px;
+  color: #c03;
+  display: block;
+}
+
+.certificate button {
+  padding: 10px;
+  border: 0;
+  font-weight: bold;
+  position: relative;
+  top: -40px;
+  left: 55%;
+  font-size: 20px;
+}
+
+.certificate button a {
+  text-decoration: none;
+  color: black;
+}
+
+.programs {
+  display: flex;
+  background: #007fac;
+  width: 100%;
+  color: white;
+  padding: 20px 12%;
+  flex-wrap: wrap;
+}
+
+.programs div {
+  padding: 10px;
+  flex: 1;
+}
+
+.programs h3 {
+  font-size: 27px;
+  padding: 40px 0 10px 0;
+}
+
+.programs a {
+  line-height: 30px;
+  display: block;
+  padding-top: 10px;
+  border-bottom: 1px solid white;
+}
+
+.programs a:hover {
+  font-weight: bold;
+  padding: 10px 0 0 0;
+}
+
+/* exporsure section */
+.exposure {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 50px 10%;
+}
+
+.exposure figure .first {
+  width: 30vw;
+  height: 310px;
+}
+
+.exposure figure figcaption {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  position: relative;
+  width: 30vw;
+  font-size: 20px;
+  padding: 5px 15px;
+}
+
+.exposure figure {
+  margin: 0;
+  padding: 0;
+}
+
+.exposure figure .sec,
+.exposure figure .thir {
+  width: 16vw;
+  height: 21vh;
+}
+
+.exposure .second figcaption,
+.exposure .third figcaption {
+  background: #e2e2e2;
+  width: 16vw;
+  height: 15.5vh;
+  padding-top: 15px;
+}
+
+.exposure .third figcaption {
+  background: lightgrey;
+}
+
+.exposure .second figcaption a,
+.exposure .third figcaption a {
+  color: #007fac;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.exposure .second figcaption p,
+.exposure .third figcaption p {
+  font-size: 65%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: black;
+}
+
+.events,
+.submit_app,
+.bottom_nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "featured     featured    Additional_news    sched"
+    "left         left        left               right";
+}
+
+.featured {
+  grid-area: featured;
+  background: #eee;
+  padding-left: 40%;
+}
+
+.featured h2,
+.Additional_news h2,
+.sched h2 {
+  font-size: 28px;
+  font-weight: 300;
+  padding: 10px 0;
+}
+
+.featured a {
+  color: #007fac;
+  font-weight: bold;
+}
+
+.events a:hover {
+  text-decoration: underline;
+}
+
+.featured img {
+  width: 95%;
+  padding-top: 10px;
+}
+
+.featured p {
+  line-height: 24px;
+}
+
+.Additional_news {
+  grid-area: Additional_news;
+  background: #eee;
+  /* max-width: 500px; */
+}
+
+.Additional_news ul,
+.sched ul {
+  list-style-type: none;
+}
+
+.Additional_news ul li,
+.sched ul li h3 {
+  font-weight: bold;
+  font-size: 17px;
+  border-bottom: 2px solid grey;
+  padding: 20px 10px 10px 10px;
+}
+
+.Additional_news ul li a,
+.sched h3 {
+  color: #007fac;
+}
+
+.sched a:hover {
+  text-decoration: underline;
+  color: #007fac;
+}
+
+.Additional_news button {
+  border: 0;
+  background: #c03;
+  color: white;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+.Additional_news button:hover,
+.events button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.sched {
+  grid-area: sched;
+  padding-left: 20px;
+}
+
+.sched ul li h3 {
+  border-bottom: none;
+}
+
+.sched ul li {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sched ul li p {
+  padding-left: 10px;
+}
+.sched .blue {
+  background: rgba(45, 131, 202, 0.1);
+}
+
+.sched .grey {
+  background: rgba(156, 156, 156, 0.1);
+}
+
+.sched button {
+  border: 0;
+  background: #c03;
+  color: white;
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+
+/* submit app */
+.submit_app {
+  color: white;
+  background: #ae0531;
+}
+
+.submit_app .left {
+  grid-area: left;
+  padding-left: 25%;
+  background: #c03;
+}
+.submit_app .left h2 {
+  font-size: 40px;
+  padding: 20px 10px 20px 0;
+  width: 30%;
+  display: inline-block;
+}
+
+.submit_app .left p {
+  line-height: 25px;
+  padding: 10px 10px 10px 30px;
+  width: 40%;
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.submit_app .right {
+  grid-area: right;
+}
+
+.submit_app .right button {
+  border: 0;
+  padding: 20px 30px;
+  color: #ae0531;
+  background: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 35px 0 0 60px;
+  border-radius: 2px;
+}
+
+.submit_app .right button:hover {
+  cursor: pointer;
+}
+
+/* bottom nav */
+.bottom_nav {
+  background: #202020;
+  color: white;
+}
+
+.bottom_nav {
+  padding: 25px;
+  display: flex;
+}
+
+.bottom_nav a:hover {
+  font-weight: bold;
+}
+
+.bottom_nav p {
+  line-height: 22px;
+}
+
+.bottom_nav h3 {
+  border-bottom: 1px solid white;
+  padding-top: 20px;
+}
+
+.bottom_nav ul {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.bottom_nav ul li {
+  padding-bottom: 5px;
+}
+
+.bottom_nav div {
+  padding: 0 30px;
+  flex: 1;
+}
+
+.bottom_nav .leftL img {
+  padding-bottom: 20px;
+}
+
+.bottom_nav .rightR ul {
+  padding-top: 20px;
+}
+
+.bottom_nav .rightR img {
+  width: 20px;
+}
+
+.bottom_nav .rightR ul li {
+  display: inline;
+  padding: 0 5px;
+}
+
+.bottom_nav .rightR ul li a {
+  padding: 10px 11px;
+  background: white;
+  border-radius: 40px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.bottom_nav a {
+  display: block;
+  padding-top: 10px;
+}
+
+/* footer */
+.footer {
+  background: #1d1d1d;
+  color: white;
+  padding: 10px 0;
+}
+
+.footer .left {
+  padding-left: 10%;
+}
+
+.footer p {
+  display: inline;
+}
+
+.footer .right {
+  position: absolute;
+  right: 20%;
+}
+
+@media screen and (max-width: 1700px) {
+  .promo_left,
+  .main .main_container {
+    left: 2%;
+  }
+
+  .main .main_container {
+    top: 8%;
+  }
+
+  .navigation .log {
+    margin-left: 3%;
+  }
+
+  .navigation ul {
+    margin-right: 2%;
+  }
+
+  .promo_right {
+    right: 2%;
+  }
+
+  .certificate {
+    padding-left: 2%;
+  }
+
+  .certificate h2 {
+    font-size: 32px;
+  }
+
+  .certificate button {
+    left: 60%;
+    margin-right: 10px;
+  }
+
+  .programs div {
+    margin: 0 10px;
+  }
+
+  .programs {
+    padding: 2%;
+  }
+
+  .exposure {
+    padding: 50px 0;
+  }
+
+  .exposure figure .first,
+  .exposure figure figcaption {
+    max-width: 100%;
+    min-width: 400px;
+  }
+
+  .exposure figure .sec,
+  .exposure figure .thir {
+    max-width: 100%;
+    min-width: 400px;
+    height: 200px;
+  }
+
+  .exposure .second figcaption a,
+  .exposure .third figcaption a {
+    font-size: 18px;
+  }
+
+  .exposure .second figcaption,
+  .exposure .third figcaption {
+    max-width: 23vw;
+    height: 150px;
+  }
+
+  .featured {
+    padding-left: 10%;
+  }
+
+  .events,
+  .submit_app {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "featured     featured    Additional_news    sched    sched"
+      "left         left        left               right  right";
+  }
+
+  .submit_app .left {
+    padding: 0 50px;
+  }
+
+  .submit_app .left h2 {
+    font-size: 30px;
+    width: 40%;
+  }
+
+  .submit_app .left p {
+    line-height: 20px;
+    padding: 10px 10px 10px 40px;
+    width: 50%;
+  }
+
+  .bottom_nav {
+    padding-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer .left {
+    padding-left: 1%;
+  }
+
+  .footer .right {
+    right: 2%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main .main_container {
+    left: 0;
+    top: 40px;
+  }
+
+  .main img {
+    height: 380px;
+  }
+
+  .main .main_container h1 {
+    font-size: 40px;
+  }
+
+  .promo_top ul li,
+  .promo_left,
+  .promo_right {
+    display: block;
+    text-align: center;
+  }
+
+  .promo_top {
+    height: 100%;
+  }
+
+  .promo_left {
+    position: relative;
+    left: 0;
+  }
+
+  .promo_right {
+    position: relative;
+    right: 0;
+  }
+
+  .programs div {
+    width: 100%;
+  }
+
+  .exposure {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin: auto;
+  }
+
+  .exposure figure .first {
+    max-width: 100%;
+    min-width: 400px;
+  }
+
+  .exposure .second figcaption,
+  .exposure .third figcaption {
+    width: 100%;
+    min-width: 400px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .events,
+  .submit_app {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "featured     featured    featured    Additional_news    Additional_news     Additional_news"
+      "sched        sched       sched       sched              sched               sched"
+      "left         left        left        right              right               right";
+  }
+
+  .submit_app .left {
+    padding: 0 30px;
+  }
+
+  .bottom_nav div {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .navigation {
+    height: 100%;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .navigation .log {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .navigation ul.drop {
+    position: static;
+    padding-top: 20px;
+    width: 100%;
+  }
+
+  .navigation ul.last {
+    right: 0;
+    left: 0;
+  }
+
+  .navigation ul {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .navigation .padHeight li {
+    padding: 32px 0;
+  }
+
+  .navigation .padHeight .mainColor {
+    display: inline-block;
+  }
+
+  .navigation ul.drop li {
+    padding: 32px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .events,
+  .submit_app {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "featured     featured    featured    Additional_news    Additional_news        Additional_news"
+      "sched        sched       sched       sched              sched                  sched"
+      "left         left        left        left               left                   left"
+      "right        right       right       right              right                  right";
+  }
+
+  .programs div {
+    padding: 10px;
+    flex: auto;
+  }
+
+  .submit_app .left h2,
+  .submit_app .left a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .submit_app .left p {
+    width: 100%;
+  }
+
+  .submit_app .right {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding: 20px 0;
+  }
+
+  .submit_app .right a,
+  .submit_app .right a button {
+    margin: 0;
+  }
+
+  .bottom_nav div {
+    flex: auto;
+  }
+
+  .certificate button {
+    margin-top: 10px;
+    position: inherit;
+  }
+  .certificate {
+    padding-bottom: 20px;
+  }
+
+  .footer p {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    left: 0;
+  }
+
+  .footer {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main .main_container {
+    width: 100%;
+  }
+}
